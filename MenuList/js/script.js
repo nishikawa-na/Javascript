@@ -1,4 +1,14 @@
 const menu = document.querySelector('#menu')
-const content = `<div><img src="images/strawberry.jpg" alt=""></div>`;
-//menu.textContent = content; これだと画像ではなくHTMLの文字列が表示されるぞ！
-menu.insertAdjacentHTML('beforeend', content);
+const lists = [
+  'strawberry.jpg',
+  'lime.jpg',
+  'mango.jpg',
+  'lemon.jpg',
+  'fig.jpg',
+  'apple.jpg',
+]
+
+for(let i = 0; i < lists.length; i++){
+  let content = `<div><img src="images/${lists[i]}" alt=""></div>`;
+  menu.insertAdjacentHTML('beforeend', content);
+}
