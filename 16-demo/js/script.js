@@ -9,6 +9,11 @@
 
 const heading = document.querySelector('#heading');
 const keyframes = {
-  opacity: [0,1],
+  color: ['transparent', '#fff'],
+  backgroundPosition: ['100% 0', '0 0'],
 };
-heading.animate(keyframes,2000);
+const opitions = {
+  duration: 1000,
+  easing: 'ease',
+}
+heading.animate(keyframes, opitions);
