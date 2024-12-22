@@ -222,3 +222,44 @@ SLIDE MENU
   font-size: 2rem;
 }
 
+/* Shop INFO */
+.fadein{
+    opacity: 0;
+}
+
+.concept {
+  margin: 8rem 0;
+  background-image: linear-gradient(
+      to right,
+      transparent 0%,
+      transparent 20%,
+      var(--light-grey) 20%,
+      var(--light-grey) 100%
+  );
+}
+.concept p {
+  text-align: left;
+  margin-bottom: 2rem;
+}
+
+.shop {
+  background: url('https://assets.codepen.io/85188/bg-shop.jpg') no-repeat center top / cover;
+  margin-top: 16rem;
+  position: relative;
+  height: 40rem;
+}
+.shop-content {
+  background: var(--white);
+  padding: 3rem;
+  position: absolute;
+  top: -8rem;
+  width: 90vw;
+  left: 0;
+  right: 0;
+}
+.shop h3 {
+  margin: 1rem 0;
+  padding-top: 2rem;
+  font-weight: normal;
+  border-top: 1px solid var(--light-grey);
+}
